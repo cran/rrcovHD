@@ -1,0 +1,9 @@
+2012-07-24  Valentin Todorov  <valentin.todorov@chello.at>
+    * 0.2-00
+    * Documentation added
+    * SIMCA classes added
+    * Added classes for outlier detection
+    * Added class SPcaGrid
+    * Created
+
+
