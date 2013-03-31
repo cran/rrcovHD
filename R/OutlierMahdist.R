@@ -109,13 +109,15 @@ OutlierMahdist.default <- function(x,
         class.labels <- which(g == lev1[i])
         class <- x[class.labels,]
 
-        if(nrow(class) < 2*p)
-        {
-            xcov <- CovClassic(class)
-        } else
-        {
-            xcov <- CovRobust(class, control=control)
-        }
+##        if(nrow(class) < 2*p)
+##        {
+##            xcov <- CovClassic(class)
+##        } else
+##        {
+##            xcov <- CovRobust(class, control=control)
+##        }
+
+        xcov <- CovRobust(class, control=control)
 
         class.outliers <- which(!getFlag(xcov))
         outliers <- c(outliers, class.labels[class.outliers])

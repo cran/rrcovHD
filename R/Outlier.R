@@ -31,7 +31,7 @@ setMethod("show", "Outlier", function(object){
     print(object@call)
     cat("-> Method: ", object@method, "\n")
     if(is.list(object@singularity))
-        cat(strwrap(robustbase:::singularityMsg(object@singularity, object@n.obs)), sep ="\n")
+        cat(strwrap(robustbase::singularityMsg(object@singularity, object@n.obs)), sep ="\n")
 
     fl <- getFlag(object)
     nout <- length(which(fl == 0))

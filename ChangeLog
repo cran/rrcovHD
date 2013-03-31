@@ -1,3 +1,10 @@
+2013-03-31  Valentin Todorov  <valentin.todorov@chello.at>
+    * 0.2-01
+    * Minor problems with imports fixed
+    * Fixed a problem in predict{Simca} - the levels
+    *   of the grouping variable are now kept
+    * Tests added: Simca and Outlier
+
 2012-07-24  Valentin Todorov  <valentin.todorov@chello.at>
     * 0.2-00
     * Documentation added

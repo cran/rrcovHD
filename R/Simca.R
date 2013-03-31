@@ -11,9 +11,11 @@ setMethod("show", "Simca", function(object){
     print(object@prior)
 
     cat("\nPca objects for Groups:\n")
-    for(i in 1:length(object@pcaobj))
-        print(object@pcaobj[[i]])
 
+    for(i in 1:length(object@pcaobj))
+    {
+        print(summary(object@pcaobj[[i]]))
+    }
     invisible(object)
 })
 
@@ -129,8 +131,7 @@ setMethod("predict", "Simca", function(object, newdata, method=2, gamma=0.5, ...
 
     tt <- .testmodel(object, x)
     assgn <- .assigngroup(tt$odsc, tt$sdsc, method=method, gamma=gamma)
-
-    cl <- as.factor(levels(object@grp)[assgn])
+    cl <- factor(levels(object@grp)[assgn], levels=levels(object@grp))
 
     colnames(tt$odsc) <- colnames(tt$sdsc) <- names(object@prior)
     ret <- new("PredictSimca", classification=cl, odsc=tt$odsc, sdsc=tt$sdsc)
