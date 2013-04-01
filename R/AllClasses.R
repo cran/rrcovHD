@@ -32,7 +32,7 @@ setClass("OutlierSign2", representation(covobj="Ulist"),
 setClass("SPcaGrid", representation(),
                     contains="PcaGrid")
 
-###################### LDA ####################################
+###################### SIMCA ####################################
 setClass("Simca", representation(call = "language",
                                prior = "vector",
                                counts = "vector",
@@ -43,7 +43,6 @@ setClass("Simca", representation(call = "language",
                                grp = "factor",
                                "VIRTUAL"))
 
-setClass("SummarySimca", representation(obj = "Simca"))
 setClass("CSimca", contains="Simca")
 setClass("RSimca",  contains="Simca")
 setClass("PredictSimca", representation(classification = "factor",
