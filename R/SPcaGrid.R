@@ -17,7 +17,7 @@ SPcaGrid.formula <- function (formula, data = NULL, subset, na.action, ...)
     mf <- eval.parent(mf)
     ## this is not a 'standard' model-fitting function,
     ## so no need to consider contrasts or levels
-    if (rrcov:::.check_vars_numeric(mf))
+    if (.check_vars_numeric(mf))
         stop("PCA applies only to numerical variables")
 
     na.act <- attr(mf, "na.action")
@@ -56,7 +56,7 @@ SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn
     ##
     ## verify and set the input parameters: k and kmax
     ##
-    kmax <- max(min(floor(kmax), rrcov:::rankMM(x)),1)
+    kmax <- max(min(floor(kmax), rrcov::rankMM(x)),1)
     if(trace)
         cat("k=", k, ", kmax=", kmax, ".\n", sep="")
 
@@ -110,7 +110,7 @@ SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn
                             n.obs=n)
 
     ## Compute distances and flags
-    res <- rrcov:::.distances(x, p, res)
+    res <- rrcov::pca.distances(x, p, res)
     return(res)
 }
 
@@ -159,4 +159,13 @@ SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn
     ret <- cbind.data.frame(lambda.seq, cpev)
     colnames(ret) <- c("lambda", "CPEV")
     ret
+}
+
+.check_vars_numeric <- function(mf)
+{
+    ## we need to test just the columns which are actually used.
+    mt <- attr(mf, "terms")
+    mterms <- attr(mt, "factors")
+    mterms <- rownames(mterms)[apply(mterms, 1, any)]
+    any(sapply(mterms, function(x) is.factor(mf[,x]) || !is.numeric(mf[,x])))
 }

@@ -119,7 +119,7 @@ OutlierPCDist.default <- function(x,
 {
     var.new <- function(x)
     {
-        return(if(length(x) == 1) 0 else stats:::var(x))
+        return(if(length(x) == 1) 0 else var(x))
     }
 
     if(eigen == FALSE)
