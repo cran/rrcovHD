@@ -85,6 +85,7 @@ screeplot(PcaGrid(xqn))
 ##
 ## DD-plots
 ##
+\dontrun{
 usr <- par(mfrow=c(2,2))
 plot(SPcaGrid(xsd, lambda=0, method="sd", k=4), main="Standard PCA")    # standard
 plot(SPcaGrid(xqn, lambda=0, method="qn", k=4))                         # robust, non-sparse
@@ -109,7 +110,7 @@ cvars2 <- cumsum(vars2)
 ev <- round(c(vars1[1:4], vars2[1:4]),2)
 cev <- round(c(cvars1[1:4], cvars2[1:4]),2)
 rbind(tab, ev, cev)
-
+}
 
 }
 \keyword{datasets}

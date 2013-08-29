@@ -63,7 +63,6 @@ data(olitos)
 cc <- CSimca(grp~., data=olitos, k=c(3,4,2,2))
 cc
 pr <- predict(cc, method=2)
-tt <- rrcov:::.confusion(cc@grp, pr@classification)
-rrcov:::.AER(tt)
+tt <- rrcov::mtxconfusion(cc@grp, pr@classification, printit=TRUE)
 }
 \keyword{datasets}

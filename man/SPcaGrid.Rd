@@ -109,6 +109,7 @@ bus.sd <- sweep(bus1, 2, xsd, "/", check.margin = FALSE)
 xqn <- apply(bus1, 2, Qn)
 bus.qn <- sweep(bus1, 2, xqn, "/", check.margin = FALSE)
 
+\dontrun{
 spc <- SPcaGrid(bus2, lambda=0, method="sd", k=p, kmax=p)
 rspc <- SPcaGrid(bus2, lambda=0, method="qn", k=p, kmax=p)
 summary(spc)
@@ -120,11 +121,9 @@ screeplot(rspc, type="line", main="Robust PCA", sub="PC", cex.main=2)
 
 K <- 4
 lambda.sd <- 1.64
-\dontrun{
     to.sd <- .tradeoff(bus2, k=K, lambda.max=2.5, lambda.n=100, method="sd")
     plot(to.sd, type="b", xlab="lambda", ylab="Explained Variance (percent)")
     abline(v=lambda.sd, lty="dotted")
-}
  
 spc.sd.p <- SPcaGrid(bus2, lambda=lambda.sd, method="sd", k=p)
 .CPEV(spc.sd.p, k=K)
@@ -133,21 +132,21 @@ getLoadings(spc.sd)[,1:K]
 plot(spc.sd)
 
 lambda.qn <- 2.06
-\dontrun{
     to.qn <- .tradeoff(bus2, k=K, lambda.max=2.5, lambda.n=100, method="qn")
     plot(to.qn, type="b", xlab="lambda", ylab="Explained Variance (percent)")
     abline(v=lambda.qn, lty="dotted")
-}
 
 spc.qn.p <- SPcaGrid(bus2, lambda=lambda.qn, method="qn", k=p)
 .CPEV(spc.qn.p, k=K)
 spc.qn <- SPcaGrid(bus2, lambda=lambda.qn, method="qn", k=K)
 getLoadings(spc.qn)[,1:K]
 plot(spc.qn)
+}
 
 ## DD-plots
 ##
 ## Not run:
+\dontrun{
 usr <- par(mfrow=c(2,2))
 plot(SPcaGrid(bus2, lambda=0, method="sd", k=4), id.n.sd=0, main="Standard PCA")
 plot(SPcaGrid(bus2, lambda=0, method="qn", k=4), id.n.sd=0, ylim=c(0,20))
@@ -157,7 +156,7 @@ plot(SPcaGrid(bus2, lambda=3.07, method="qn", k=4), id.n.sd=0, main="Robust spar
 
 par(usr)
 ## End (Not run)
-
+}
 }
 
 \keyword{robust}

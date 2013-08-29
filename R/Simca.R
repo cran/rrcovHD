@@ -67,7 +67,7 @@ setMethod("show", "Simca", function(object){
 
             ev <- getEigenvalues(out[[jg]])
             sd[index, jg] <- sqrt(scorei %*% (diag(1/ev, nrow=length(ev))) %*% t(scorei))
-            od[index,jg] <- rrcov:::vecnorm(dataicentered - dataitilde)
+            od[index,jg] <- rrcov::vecnorm(dataicentered - dataitilde)
              if(out[[jg]]@cutoff.od != 0)
             {
                 odsc[index, jg] <- od[index, jg] / out[[jg]]@cutoff.od
@@ -136,7 +136,7 @@ setMethod("predict", "Simca", function(object, newdata, method=2, gamma=0.5, ...
     colnames(tt$odsc) <- colnames(tt$sdsc) <- names(object@prior)
     ret <- new("PredictSimca", classification=cl, odsc=tt$odsc, sdsc=tt$sdsc)
     if(ct){
-        ctab <- rrcov:::.confusion(object@grp, cl)
+        ctab <- rrcov::mtxconfusion(object@grp, cl)
         ret@ct <- ctab
     }
 
