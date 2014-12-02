@@ -95,7 +95,7 @@ RSimca.default <- function(x,
         xpca <- switch(control,
                 hubert=if(missing(alpha)) PcaHubert(class, k[i], kmax=kmax[i], trace=trace) else PcaHubert(class, k[i], kmax=kmax[i], alpha=alpha[i], trace=trace),
                 locantore=PcaLocantore(class, k[i], trace=trace),
-                grid=PcaGrid(class, k[i], trace=trace),
+                grid=PcaGrid(class, k[i], method="qn", trace=trace),
                 proj=PcaProj(class, k[i], trace=trace),
                 )
 

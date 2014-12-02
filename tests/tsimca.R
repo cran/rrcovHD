@@ -1,4 +1,7 @@
-library(rrcovHD)
+## VT::15.09.2013 - this will render the output independent
+##  from the version of the package
+suppressPackageStartupMessages(library(rrcovHD))
+
 data(iris)
 
 ## New data for prediction consisting only of the first two classes

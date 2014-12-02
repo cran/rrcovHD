@@ -74,7 +74,7 @@ apply(xmad, 2, mad)
 
 x.qn <- apply(kibler, 2, Qn)
 xqn <- sweep(kibler, 2, x.qn, "/", check.margin = FALSE)
-apply(xqn, 2, qn)
+apply(xqn, 2, Qn)
 
 
 ## Display the scree plot of the classical and robust PCA
@@ -88,10 +88,10 @@ screeplot(PcaGrid(xqn))
 \dontrun{
 usr <- par(mfrow=c(2,2))
 plot(SPcaGrid(xsd, lambda=0, method="sd", k=4), main="Standard PCA")    # standard
-plot(SPcaGrid(xqn, lambda=0, method="qn", k=4))                         # robust, non-sparse
+plot(SPcaGrid(xqn, lambda=0, method="Qn", k=4))                         # robust, non-sparse
 
 plot(SPcaGrid(xqn, lambda=1,43, method="sd", k=4), main="Stdandard sparse PCA")  # sparse
-plot(SPcaGrid(xqn, lambda=2.36, method="qn", k=4), main="Robust sparse PCA")     # robust sparse
+plot(SPcaGrid(xqn, lambda=2.36, method="Qn", k=4), main="Robust sparse PCA")     # robust sparse
 par(usr)
 
 #########################################

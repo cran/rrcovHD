@@ -32,8 +32,17 @@ setMethod("plot", signature(x="OutlierPCOut", y="missing"), function(x, y="missi
 
     obj.class <- x@covobj[[class]]
 
+    n <- length(obj.class$x.dist1)
+    off <- n/(n/1.5)
+
     # location outliers
     plot(obj.class$x.dist1, xlab="Index", ylab="Distance (location)", ...)
+    if(id.n > 0)
+    {
+        ord <- order(obj.class$x.dist1, decreasing=TRUE)
+        ii <- ord[1:id.n]
+        text(x=ii+off, y=obj.class$x.dist1[ii], labels=ii)
+    }
     abline(h=obj.class$const1)
     abline(h=obj.class$M1, lty=2)
     plot(obj.class$wloc, xlab="Index", ylab="Weight (location)", ylim=c(0,1), ...)
@@ -42,6 +51,12 @@ setMethod("plot", signature(x="OutlierPCOut", y="missing"), function(x, y="missi
 
     # scatter outliers
     plot(obj.class$x.dist2, xlab="Index", ylab="Distance (scatter)", ...)
+    if(id.n > 0)
+    {
+        ord <- order(obj.class$x.dist2, decreasing=TRUE)
+        ii <- ord[1:id.n]
+        text(x=ii+off, y=obj.class$x.dist2[ii], labels=ii)
+    }
     abline(h=obj.class$const2)
     abline(h=obj.class$M2, lty=2)
     plot(obj.class$wscat, xlab="Index", ylab="Weight (scatter)", ylim=c(0,1), ...)
@@ -50,6 +65,12 @@ setMethod("plot", signature(x="OutlierPCOut", y="missing"), function(x, y="missi
 
     # combined weights
     plot(obj.class$wfinal, xlab="Index", ylab="Weight (combined)", ylim=c(0,1), ...)
+    if(id.n > 0)
+    {
+        ord <- order(obj.class$wfinal)
+        ii <- ord[1:id.n]
+        text(x=ii+off, y=obj.class$wfinal[ii], labels=ii)
+    }
     abline(h=obj.class$cs)
     plot(obj.class$wfinal01, xlab="Index", ylab="Final 0/1 weight", ylim=c(0,1), ...)
 
@@ -84,6 +105,7 @@ OutlierPCOut.formula <- function(formula, data, ..., subset, na.action)
 
 OutlierPCOut.default <- function(x,
                  grouping,
+                 explvar=0.99,
                  trace=FALSE,
                  ...)
 {
@@ -105,7 +127,7 @@ OutlierPCOut.default <- function(x,
         class.labels <- which(grpx$grouping == grpx$lev[i])
         class <- x[class.labels,]
 
-        xcov <- .pcout(class)
+        xcov <- .pcout(class, explvar=explvar)
 
         class.outliers <- which(xcov$wfinal01 == 0)
         outliers <- c(outliers, class.labels[class.outliers])

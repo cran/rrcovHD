@@ -8,7 +8,7 @@
 }
 \usage{
     SPcaGrid(x, ...)
-    \method{SPcaGrid}{default}(x, k = 0, kmax = ncol(x), method = c ("mad", "sd", "qn"), 
+    \method{SPcaGrid}{default}(x, k = 0, kmax = ncol(x), method = c ("mad", "sd", "qn", "Qn"), 
     lambda = 1, scale=FALSE, na.action = na.fail, trace=FALSE, \dots)
     \method{SPcaGrid}{formula}(formula, data = NULL, subset, na.action, \dots)
 }
@@ -38,7 +38,7 @@
     does not need to be specified, unless \code{k} is larger than 10.}
   \item{method}{ the scale estimator used to detect the direction with the 
   largest variance. Possible values are \code{"sd"}, \code{"mad"} and 
-  \code{"qn"}, the  latter can be called \code{"Qn"} too. \code{"mad"} is the 
+  \code{"Qn"}. \code{"mad"} is the 
   default value.}
   \item{lambda}{ the sparseness constraint's strength(\code{sPCAgrid} only).
     A single value for all components, or a vector of length \code{k} with 
@@ -91,7 +91,7 @@ xmad <- apply(bus, 2, mad)
 cat("\nMin, Max of MADN: ", min(xmad), max(xmad), "\n")
 
 ## calculate MADN for each variable
-xqn <- apply(bus, 2, qn)
+xqn <- apply(bus, 2, Qn)
 cat("\nMin, Max of Qn: ", min(xqn), max(xqn), "\n")
 
 
@@ -111,7 +111,7 @@ bus.qn <- sweep(bus1, 2, xqn, "/", check.margin = FALSE)
 
 \dontrun{
 spc <- SPcaGrid(bus2, lambda=0, method="sd", k=p, kmax=p)
-rspc <- SPcaGrid(bus2, lambda=0, method="qn", k=p, kmax=p)
+rspc <- SPcaGrid(bus2, lambda=0, method="Qn", k=p, kmax=p)
 summary(spc)
 summary(rspc)
 screeplot(spc, type="line", main="Classical PCA", sub="PC", cex.main=2)
@@ -132,13 +132,13 @@ getLoadings(spc.sd)[,1:K]
 plot(spc.sd)
 
 lambda.qn <- 2.06
-    to.qn <- .tradeoff(bus2, k=K, lambda.max=2.5, lambda.n=100, method="qn")
+    to.qn <- .tradeoff(bus2, k=K, lambda.max=2.5, lambda.n=100, method="Qn")
     plot(to.qn, type="b", xlab="lambda", ylab="Explained Variance (percent)")
     abline(v=lambda.qn, lty="dotted")
 
-spc.qn.p <- SPcaGrid(bus2, lambda=lambda.qn, method="qn", k=p)
+spc.qn.p <- SPcaGrid(bus2, lambda=lambda.qn, method="Qn", k=p)
 .CPEV(spc.qn.p, k=K)
-spc.qn <- SPcaGrid(bus2, lambda=lambda.qn, method="qn", k=K)
+spc.qn <- SPcaGrid(bus2, lambda=lambda.qn, method="Qn", k=K)
 getLoadings(spc.qn)[,1:K]
 plot(spc.qn)
 }
@@ -149,10 +149,10 @@ plot(spc.qn)
 \dontrun{
 usr <- par(mfrow=c(2,2))
 plot(SPcaGrid(bus2, lambda=0, method="sd", k=4), id.n.sd=0, main="Standard PCA")
-plot(SPcaGrid(bus2, lambda=0, method="qn", k=4), id.n.sd=0, ylim=c(0,20))
+plot(SPcaGrid(bus2, lambda=0, method="Qn", k=4), id.n.sd=0, ylim=c(0,20))
 
 plot(SPcaGrid(bus2, lambda=1.64, method="sd", k=4), id.n.sd=0, main="Stdandard sparse PCA")
-plot(SPcaGrid(bus2, lambda=3.07, method="qn", k=4), id.n.sd=0, main="Robust sparse PCA")
+plot(SPcaGrid(bus2, lambda=3.07, method="Qn", k=4), id.n.sd=0, main="Robust sparse PCA")
 
 par(usr)
 ## End (Not run)

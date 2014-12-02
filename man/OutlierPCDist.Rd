@@ -95,7 +95,7 @@ Outlier identification in high dimensions using the PCDIST algorithm
 \examples{
 
 data(hemophilia)
-obj <- OutlierSign1(gr~.,data=hemophilia)
+obj <- OutlierPCDist(gr~.,data=hemophilia)
 obj
 
 getDistance(obj)            # returns an array of distances

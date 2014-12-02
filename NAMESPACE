@@ -3,6 +3,7 @@ exportPattern(".")
 
 # Import all packages listed as Imports or Depends
 importFrom(methods, show)
+
 import(
   robustbase,
   pcaPP,

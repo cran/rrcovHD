@@ -1,3 +1,18 @@
+2014-12-02  Valentin Todorov  <valentin.todorov@chello.at>
+    *
+    * DESCRIPTION (Version): 0.2-3
+    *
+    * Fixed compatibility issues with robustbase and rrcov versions (imports)
+    *
+    * Use suppressPackageStartupMessages(library(rrcov)) in the tests
+    * R/SPcaGrid.R - Fixed a bug: wrong call to rrcov::pca.distances()
+    *
+
+2013-09-01  Valentin Todorov  <valentin.todorov@chello.at>
+    * 0.2-02
+    * Warnings fixed - see mail from Prof. Ripley from 9.August 2013
+    *
+
 2013-03-31  Valentin Todorov  <valentin.todorov@chello.at>
     * 0.2-01
     * Minor problems with imports fixed

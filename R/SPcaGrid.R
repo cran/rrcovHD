@@ -40,7 +40,7 @@ SPcaGrid.formula <- function (formula, data = NULL, subset, na.action, ...)
     res
 }
 
-SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn"),
+SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn", "Qn"),
     lambda = 1, scale=FALSE, na.action = na.fail, trace=FALSE, ...)
 {
 
@@ -56,7 +56,7 @@ SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn
     ##
     ## verify and set the input parameters: k and kmax
     ##
-    kmax <- max(min(floor(kmax), rrcov::rankMM(x)),1)
+    kmax <- max(min(floor(kmax), rankMM(x)),1)
     if(trace)
         cat("k=", k, ", kmax=", kmax, ".\n", sep="")
 
@@ -81,6 +81,9 @@ SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn
     {
         scale <- if(scale) sd else  NULL
     }
+    method <- match.arg(method)
+    if(method== "Qn")
+        method <- "qn"
     out <- sPCAgrid(x, k, lambda=lambda, method=method, scale=scale, ...)
 
     scores <- predict(out)
@@ -110,7 +113,7 @@ SPcaGrid.default <- function(x, k=0, kmax=ncol(x),  method = c ("mad", "sd", "qn
                             n.obs=n)
 
     ## Compute distances and flags
-    res <- rrcov::pca.distances(x, p, res)
+    res <- rrcov::pca.distances(res, x, p)
     return(res)
 }
 

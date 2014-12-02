@@ -20,7 +20,7 @@ Outlier identification in high dimensions using the PCOUT algorithm
 
 \usage{
     OutlierPCOut(x, ...)
-    \method{OutlierPCOut}{default}(x, grouping, trace=FALSE, \dots)
+    \method{OutlierPCOut}{default}(x, grouping, explvar=0.99, trace=FALSE, \dots)
     \method{OutlierPCOut}{formula}(formula, data, \dots, subset, na.action)
 }
 
@@ -39,6 +39,8 @@ Outlier identification in high dimensions using the PCOUT algorithm
   \item{\dots}{arguments passed to or from other methods.}
   \item{x}{a matrix or data frame. }
   \item{grouping}{grouping variable:  a factor specifying the class for each observation.}
+  \item{explvar}{ a numeric value between 0 and 1 indicating how much variance
+  should be covered by the robust PCs (default to 0.99) }    
   \item{trace}{whether to print intermediate results. Default is \code{trace = FALSE}}
 }
 
