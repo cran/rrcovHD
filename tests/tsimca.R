@@ -14,7 +14,7 @@ qq
 pr <- predict(qq, newdata=newx)
 pr
 
-cs <- CSimca(Species~., data=iris)
+cs <- CSimca(Species~., data=iris, k=4)
 cs
 pr1 <- predict(cs)
 pr1
@@ -23,8 +23,8 @@ pr2
 
 ## Prediction when in the new data there are missing values
 data(fish)
-newfish <- na.omit(fish[fish$Species %in% c(1, 3, 4, 7), -7])
-cs <- CSimca(Species~., data=fish)
+newfish <- na.omit(fish[fish$Species %in% c(1, 3, 7), -7])
+cs <- CSimca(Species~., data=fish, k=6, kmax=6)
 cs
 pr1 <- predict(cs)
 pr1

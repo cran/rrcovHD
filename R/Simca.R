@@ -68,7 +68,7 @@ setMethod("show", "Simca", function(object){
             ev <- getEigenvalues(out[[jg]])
             sd[index, jg] <- sqrt(scorei %*% (diag(1/ev, nrow=length(ev))) %*% t(scorei))
             od[index,jg] <- rrcov::vecnorm(dataicentered - dataitilde)
-             if(out[[jg]]@cutoff.od != 0)
+            if(out[[jg]]@cutoff.od != 0)
             {
                 odsc[index, jg] <- od[index, jg] / out[[jg]]@cutoff.od
             }else

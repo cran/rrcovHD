@@ -56,6 +56,9 @@ OutlierPCDist.default <- function(x,
     if(is.null(dim(x)))
         stop("x is not a matrix")
 
+    if(missing(control) || is.null(control))
+        control = CovControlSest(method="sfast")
+
     xcall <- match.call()
     x <- as.matrix(x)
     n <- nrow(x)
@@ -82,7 +85,7 @@ OutlierPCDist.default <- function(x,
         class.labels <- which(grpx$grouping == grpx$lev[i])
         class <- data[class.labels,]
 
-        xcov <- CovSest(class)
+        xcov <- CovRobust(class, control=control)
 
         class.outliers <- which(getFlag(xcov) == 0)
         outliers <- c(outliers, class.labels[class.outliers])

@@ -49,20 +49,20 @@ A data frame containing 11 variables with different dimensions of 111 cars
     plot(mcd, which="pairs")
     
 ## Start with robust PCA
-    pca <- PcaHubert(Cars, kmax=11)
+    pca <- PcaHubert(Cars, k=ncol(Cars), kmax=ncol(Cars))
     pca
 
 ## Compare with the classical PCA
     prcomp(Cars)
 
 ## or  
-    PcaClassic(Cars, kmax=11)
+    PcaClassic(Cars, k=ncol(Cars), kmax=ncol(Cars))
     
 ## If you want to print the scores too, use
     print(pca, print.x=TRUE)
 
 ## Using the formula interface
-    PcaHubert(~., data=Cars, kmax=11)
+    PcaHubert(~., data=Cars, k=ncol(Cars), kmax=ncol(Cars))
 
 ## To plot the results:
 
@@ -71,11 +71,11 @@ A data frame containing 11 variables with different dimensions of 111 cars
     plot(pca2)                   # PCA diagnostic plot (or outlier map)
     
 ## Use the standard plots available for prcomp and princomp
-    screeplot(pca)    
-    biplot(pca)    
+    screeplot(pca)    # it is interesting with all variables    
+    biplot(pca)       # for biplot we need more than one PCs
     
 ## Restore the covraiance matrix     
-    py <- PcaHubert(Cars, kmax=11)
+    py <- PcaHubert(Cars, k=ncol(Cars), kmax=ncol(Cars))
     cov.1 <- py@loadings \%*\% diag(py@eigenvalues) \%*\% t(py@loadings)
     cov.1      
 
