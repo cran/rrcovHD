@@ -1,10 +1,22 @@
+2016-10-10  Valentin Todorov  <valentin.todorov@chello.at>
+    *
+    * DESCRIPTION (Version): 0.2-5
+    *
+    * Fixed the exports in NAMESPACE (previously everything was exported)
+    *
+    * Added functions and classes for Robust and sparse multigroup classification
+    *   by the optimal scoring approach: SosDisc, SosDiscClass, SosDiscRobust, 
+    *   SummarySosDisc and PredictSosDisc.
+    *
+    *
+
 2016-02-12  Valentin Todorov  <valentin.todorov@chello.at>
     *
     * DESCRIPTION (Version): 0.2-4
     *
     * Fixed a bug related to an update of rrcov
     *
-    * Fixed a bug in OutlierPCDist() - now any robust estimator 
+    * Fixed a bug in OutlierPCDist() - now any robust estimator
     *   can be used, not only CovSest.
     *
 2014-12-02  Valentin Todorov  <valentin.todorov@chello.at>
