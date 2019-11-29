@@ -1,3 +1,12 @@
+2019-11-10  Valentin Todorov  <valentin.todorov@chello.at>
+    *
+    * DESCRIPTION (Version): 0.2-6
+    *
+    * In this version I only simulate using Rcpp, in order to fix the issue in 
+    *   robustHD, which does not load properly Rcpp and the check of rrcovHD 
+    *   fails. I hope this trick will help. I only added a dummy cpp function
+    *   rcpp_hello_world() which serves as an example hot to use Rcpp.
+    
 2016-10-10  Valentin Todorov  <valentin.todorov@chello.at>
     *
     * DESCRIPTION (Version): 0.2-5
@@ -5,7 +14,7 @@
     * Fixed the exports in NAMESPACE (previously everything was exported)
     *
     * Added functions and classes for Robust and sparse multigroup classification
-    *   by the optimal scoring approach: SosDisc, SosDiscClass, SosDiscRobust, 
+    *   by the optimal scoring approach: SosDisc, SosDiscClass, SosDiscRobust,
     *   SummarySosDisc and PredictSosDisc.
     *
     *

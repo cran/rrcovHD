@@ -50,7 +50,7 @@ cations per square meter.
 }
 \references{
     Vanden Branden K, Hubert M (2005). 
-    Robust Classication in High Dimensions Based on the SIMCA Method. 
+    Robust Classiffication in High Dimensions Based on the SIMCA Method. 
     \emph{Cbemometrics and Intelligent Laboratoty Sysiem}, 79: 10--21.   
 }
 \examples{
