@@ -1,12 +1,17 @@
+2021-04-21  Valentin Todorov  <valentin.todorov@chello.at>
+    *
+    * DESCRIPTION (Version): 0.2-7
+    *
+    
 2019-11-10  Valentin Todorov  <valentin.todorov@chello.at>
     *
     * DESCRIPTION (Version): 0.2-6
     *
-    * In this version I only simulate using Rcpp, in order to fix the issue in 
-    *   robustHD, which does not load properly Rcpp and the check of rrcovHD 
+    * In this version I only simulate using Rcpp, in order to fix the issue in
+    *   robustHD, which does not load properly Rcpp and the check of rrcovHD
     *   fails. I hope this trick will help. I only added a dummy cpp function
-    *   rcpp_hello_world() which serves as an example hot to use Rcpp.
-    
+    *   rcpp_hello_world() which serves as an example how to use Rcpp.
+
 2016-10-10  Valentin Todorov  <valentin.todorov@chello.at>
     *
     * DESCRIPTION (Version): 0.2-5

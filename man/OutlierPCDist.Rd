@@ -72,17 +72,18 @@ Outlier identification in high dimensions using the PCDIST algorithm
 }
 
 \references{
-    A.D. Shieh and Y.S. Hung  (2009), 
+    A.D. Shieh and Y.S. Hung  (2009).
     Detecting Outlier Samples in Microarray Data,
-    \emph{Statistical Applications in Genetics and Molecular Biology} Vol. 8.
+    \emph{Statistical Applications in Genetics and Molecular Biology} \bold{8}.
 
     M. Zhu, and A. Ghodsi (2006). Automatic dimensionality selection from the scree
     plot via the use of profile likelihood. \emph{Computational Statistics & Data Analysis},
-    Vol. 51, 918-930.
+    \bold{51}, pp. 918--930.
 
-    P. Filzmoser & V. Todorov (2012),
+    Filzmoser P & Todorov V (2013).
     Robust tools for the imperfect world,
-    \emph{} To appear.
+    \emph{Information Sciences} \bold{245}, 4--20.
+    \doi{10.1016/j.ins.2012.10.017}.
 }
 
 \author{ Valentin Todorov \email{valentin.todorov@chello.at} 

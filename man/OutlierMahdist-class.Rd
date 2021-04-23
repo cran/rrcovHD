@@ -43,10 +43,16 @@ Class \code{"\linkS4class{Outlier}"}, directly.
 	 }
 }
 \references{
- Todorov V & Filzmoser P (2009),
-  An Object Oriented Framework for Robust Multivariate Analysis.
-  \emph{Journal of Statistical Software}, \bold{32}(3), 1--47.
-  URL \url{http://www.jstatsoft.org/v32/i03/}.
+    Todorov V & Filzmoser P (2009).
+    An Object Oriented Framework for Robust Multivariate Analysis.
+    \emph{Journal of Statistical Software}, \bold{32}(3), 1--47.
+    \doi{10.18637/jss.v032.i03}.   
+  
+    Filzmoser P & Todorov V (2013).
+    Robust tools for the imperfect world,
+    \emph{Information Sciences} \bold{245}, 4--20.
+    \doi{10.1016/j.ins.2012.10.017}.
+  
 }
 \author{ Valentin Todorov \email{valentin.todorov@chello.at} }
 \seealso{

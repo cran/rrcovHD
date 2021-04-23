@@ -36,13 +36,14 @@ Class \code{"\linkS4class{Outlier}"}, directly.
 	 }
 }
 \references{
-    A.D. Shieh and Y.S. Hung  (2009), 
+    A.D. Shieh and Y.S. Hung  (2009).
     Detecting Outlier Samples in Microarray Data,
     \emph{Statistical Applications in Genetics and Molecular Biology} Vol. 8.
 
-    P. Filzmoser & V. Todorov (2012),
+    Filzmoser P & Todorov V (2013).
     Robust tools for the imperfect world,
-    \emph{} To appear.
+    \emph{Information Sciences} \bold{245}, 4--20.
+    \doi{10.1016/j.ins.2012.10.017}.
 }
 
 \author{ Valentin Todorov \email{valentin.todorov@chello.at} 

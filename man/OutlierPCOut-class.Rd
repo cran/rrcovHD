@@ -36,13 +36,14 @@ Class \code{"\linkS4class{Outlier}"}, directly.
 }
 
 \references{
-    P. Filzmoser, R. Maronna and M. Werner (2008),
+    P. Filzmoser, R. Maronna and M. Werner (2008).
     Outlier identification in high dimensions,
     \emph{Computational Statistics & Data Analysis}, Vol. 52 1694--1711.
     
-    P. Filzmoser & V. Todorov (2012),
+    Filzmoser P & Todorov V (2013).
     Robust tools for the imperfect world,
-    \emph{} To appear.
+    \emph{Information Sciences} \bold{245}, 4--20.
+    \doi{10.1016/j.ins.2012.10.017}.
 }
 \author{ Valentin Todorov \email{valentin.todorov@chello.at} }
 \seealso{

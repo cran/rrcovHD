@@ -82,14 +82,15 @@ The classification model is estimated on the low dimensional sparse subspace \eq
     Sparse least trimmed squares regression for analysing high-dimensional large data sets.
     \emph{The Annals of Applied Statistics}, \bold{7}(1), 226--248.
 
-    Hoffmann I, Filzmoser P & Croux C (2016),
+    Ortner I, Filzmoser P & Croux C (2020),
     Robust and sparse multigroup classification by the optimal scoring approach.
-    Submitted for publication.
+    Data Mining and Knowledge Discovery \bold{34}, 723--741.
+    \doi{10.1007/s10618-019-00666-8}.     
 }
 
 
 \author{ 
-Irene Hoffmann \email{irene.hoffmann@tuwien.ac.at} and Valentin Todorov \email{valentin.todorov@chello.at} 
+Irene Ortner \email{irene.ortner@applied-statistics.at} and Valentin Todorov \email{valentin.todorov@chello.at} 
 }
 
 \examples{

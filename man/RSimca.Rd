@@ -87,6 +87,11 @@ Vanden Branden K, Hubert M (2005) and Todorov and Filzmoser (2009).
     Vanden Branden K, Hubert M (2005) Robust classification in high 
     dimensions based on the SIMCA method. Chemometrics and 
     Intellegent Laboratory Systems 79:10--21
+
+    Todorov V & Filzmoser P (2014),
+    Software Tools for Robust Analysis of High-Dimensional Data.
+    \emph{Austrian Journal of Statistics}, \bold{43}(4),  255--266,
+    \doi{10.17713/ajs.v43i4.44}.   
 }
 
 \author{ Valentin Todorov \email{valentin.todorov@chello.at} 

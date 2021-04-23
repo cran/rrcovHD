@@ -24,10 +24,15 @@ They contain values meant for printing by \code{show()}}
 	 }
 }
 \references{
-  Todorov V & Filzmoser P (2009),
-  An Object Oriented Framework for Robust Multivariate Analysis.
-  \emph{Journal of Statistical Software}, \bold{32}(3), 1--47.
-  URL \url{http://www.jstatsoft.org/v32/i03/}.
+    Todorov V & Filzmoser P (2009),
+    An Object Oriented Framework for Robust Multivariate Analysis.
+    \emph{Journal of Statistical Software}, \bold{32}(3), 1--47.
+    \doi{10.18637/jss.v032.i03}.   
+
+    Todorov V & Filzmoser P (2014),
+    Software Tools for Robust Analysis of High-Dimensional Data.
+    \emph{Austrian Journal of Statistics}, \bold{43}(4),  255--266,
+    \doi{10.17713/ajs.v43i4.44}.     
 }
 \author{Valentin Todorov \email{valentin.todorov@chello.at}}
 \seealso{

@@ -24,6 +24,7 @@ importFrom("stats", ".getXlevels", "cor", "cov", "cov.wt", "cov2cor",
          "qf", "qnorm", "quantile", "rnorm", "runif", "sd", "terms",
          "uniroot", "var")
 importFrom("utils", "combn")
+importFrom("pcaPP", "sPCAgrid")
 
 importFrom(robustHD, sparseLTS, robStandardize)
 import(

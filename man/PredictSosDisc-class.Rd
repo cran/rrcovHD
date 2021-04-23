@@ -38,12 +38,13 @@ of freedom receive weight zero, all others weight one.
     Sparse discriminant analysis.
     \emph{Technometrics}, \bold{53}(4), 406--413. 
 
-    Hoffmann I, Filzmoser P & Croux C (2016),
+    Ortner I, Filzmoser P & Croux C (2020),
     Robust and sparse multigroup classification by the optimal scoring approach.
-    Submitted for publication.
+    Data Mining and Knowledge Discovery \bold{34}, 723--741.
+    \doi{10.1007/s10618-019-00666-8}.     
 }
 \author{
-    Irene Hoffmann \email{irene.hoffmann@tuwien.ac.at} and Valentin Todorov \email{valentin.todorov@chello.at} 
+    Irene Ortner \email{irene.ortner@applied-statistics.at} and Valentin Todorov \email{valentin.todorov@chello.at} 
 }
 \seealso{
   \code{\link{SosDisc-class}}

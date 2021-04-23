@@ -69,13 +69,21 @@ is a generic function with "formula" and "default" methods. For details see
 
 
 \references{
-  C. Croux, P. Filzmoser, M. Oliveira, (2007).
-  Algorithms for Projection-Pursuit Robust Principal Component Analysis,
-  \emph{Chemometrics and Intelligent Laboratory Systems}, Vol. 87, pp. 218-225.
-
-  C. Croux, P. Filzmoser, H. Fritz (2011).
-  Robust Sparse Principal Component Analysis Based on Projection-Pursuit,
-  \emph{} To appear.
+    C. Croux, P. Filzmoser, M. Oliveira, (2007).
+    Algorithms for Projection-Pursuit Robust Principal Component Analysis,
+    \emph{Chemometrics and Intelligent Laboratory Systems}, Vol. 87, pp. 218-225.
+    
+    C. Croux, P. Filzmoser, H. Fritz (2013).
+    Robust Sparse Principal Component Analysis,
+    \emph{Technometrics} \bold{55}(2), pp. 202--2014,
+    \doi{10.1080/00401706.2012.727746}.   
+  
+    V. Todorov, P. Filzmoser (2013). Comparing classical and robust sparse PCA.
+    In R Kruse, M Berthold, C Moewes, M Gil, P Grzegorzewski, O Hryniewicz (eds.), 
+    \emph{Synergies of Soft Computing and Statistics for Intelligent Data Analysis}, 
+    volume 190 of \emph{Advances in Intelligent Systems and Computing}, pp. 283--291. 
+    Springer, Berlin; New York. ISBN 978-3-642-33041-4,
+    \doi{10.1007/978-3-642-33042-1_31}.
 }
 
 \author{ Valentin Todorov \email{valentin.todorov@chello.at} 

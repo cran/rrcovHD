@@ -68,22 +68,22 @@ Outlier identification using robust (mahalanobis) distances based on robust mult
     \emph{Journal of the American Statistical Association}. 
     Vol. 85(411), pp. 633-651.
 
-    P. J. Rousseeuw and A. M. Leroy (1987)
+    P. J. Rousseeuw and A. M. Leroy (1987).
     \emph{Robust Regression and Outlier Detection.} Wiley.
 
     P. J. Rousseeuw and K. van Driessen (1999)
     A fast algorithm for the minimum covariance determinant estimator.
     \emph{Technometrics} \bold{41}, 212--223.
 
-    Todorov V & Filzmoser P (2009),
+    Todorov V & Filzmoser P (2009).
     An Object Oriented Framework for Robust Multivariate Analysis.
-    \emph{Journal of Statistical Software}, \bold{32}(3), 1--47.
-    URL \url{http://www.jstatsoft.org/v32/i03/}.
+    \emph{Journal of Statistical Software}, \bold{32}(3), 1--47,
+    \doi{10.18637/jss.v032.i03}.   
     
-    Filzmoser P & Todorov V (2012),
+    Filzmoser P & Todorov V (2013).
     Robust tools for the imperfect world,
-    \emph{} To appear.
-    
+    \emph{Information Sciences} \bold{245}, 4--20.
+    \doi{10.1016/j.ins.2012.10.017}.
 }
 \author{ Valentin Todorov \email{valentin.todorov@chello.at} 
 }
