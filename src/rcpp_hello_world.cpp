@@ -1,3 +1,5 @@
+//	Rcpp::compileAttributes("C:/users/valen/onedrive/myrepo/R/rrcovHD")
+//	Rcpp::compileAttributes("C:/projects/statproj/R/rrcovHD")
 
 #include <Rcpp.h>
 using namespace Rcpp;

@@ -1,6 +1,6 @@
-2013ea8ab5dcaed3253891ed186b68c7 *ChangeLog
-fe6c47c2467ad424e0067f3eb4e4adeb *DESCRIPTION
-d24931a0bec980218788aec41d93cf07 *NAMESPACE
+a99bd1843e7dc3711e8d79c515df481f *ChangeLog
+9b35a92a469595579998187a4f3ffbd3 *DESCRIPTION
+d8a16578ed5ccbca7d7a60416132b6ce *NAMESPACE
 efad732ecf91a9afa4400a0f8ed6370a *R/AllClasses.R
 fa3488e849eaf56a18e2cce603d41d39 *R/AllGenerics.R
 6c60bbad40c34957cef862bc41981ce2 *R/CSimca.R
@@ -10,14 +10,14 @@ cb3a9c341325bea36401672488a4945a *R/OutlierPCDist.R
 80e135a54fa4fa2b716143ce56e696ab *R/OutlierPCOut.R
 e582acd3aae7c65f696f0ad6e9428903 *R/OutlierSign1.R
 c5ccce9f69888b5156b4afee10648a07 *R/RSimca.R
-f592ae19cea5449604c6f38eace14b20 *R/RcppExports.R
+92c3c4187f56064d4d2705e89bc83ce0 *R/RcppExports.R
 ffae5d4944f1ed4132b87da9ad62fec0 *R/SPcaGrid.R
 6c6733442e5d22b8860bd794ac472825 *R/Simca.R
 fabf215b0ac9035e4a834f1ec7531a6d *R/SosDisc-utils.R
 7a2dacfa79cc8cea85db56b4b7f26c99 *R/SosDiscRobust.R
 5752f99eceda48e21d5743fe05c7c9b6 *R/zzz.R
-87c01a6c37feb4a3805074ecc5c8aed3 *build/partial.rdb
-b2602cf8e589f0afb594a2f82d3d9e03 *data/Cars.rda
+d05b9d1b2e12be32999b488a627f9dcb *README.md
+181b5ac5a69bd3e3e542680739e88fd5 *build/partial.rdb
 147e0a31d59f34c794654ff8fe277dbd *data/kibler.rda
 8539fc2a06fc02206085015e19337433 *inst/ex/outlier.R
 16f2695c73fa8c58546b3e9232143337 *inst/ex/simca-colon.R
@@ -26,7 +26,6 @@ ef95493bd3bc1612bfb5ec5c1e12ab08 *inst/ex/simca-plots.R
 8e8becb199ac423e908f85c13f1dd012 *inst/ex/simca-predict.R
 269a1ffa64af620e7a7ecdfc5627a67e *man/CSimca-class.Rd
 af343c8889e7d66859df7f2fc7b3d719 *man/CSimca.Rd
-86e971b493f5a520073d6cfe2740849e *man/Cars.Rd
 371f4b4acfabc30a923edbd5b4bd998c *man/Outlier-class.Rd
 5f310fe1e15b2a5abb2ec59fa37de575 *man/OutlierMahdist-class.Rd
 5aec8b1d7301934fd3fc948c7312e07f *man/OutlierMahdist.Rd
@@ -42,7 +41,7 @@ a6589a5a147fdd0a4e4659bb16012ed7 *man/PredictSimca-class.Rd
 9b8bbf1f8715c91c8458892f95060369 *man/PredictSosDisc-class.Rd
 fdaf4091f60b346802ca3e6a50d549f8 *man/RSimca-class.Rd
 bc0f956e0ca67501b3b307f64ff269e1 *man/RSimca.Rd
-5f3d7b0a9bcfab880fbf3dc02f71f600 *man/SPcaGrid-class.Rd
+0f78877f61580189f9713c07e9a38fec *man/SPcaGrid-class.Rd
 b2a91ad5e9fde068a751e182d26d81c3 *man/SPcaGrid.Rd
 84bdad46fda95cad7375c7768658b6b6 *man/Simca-class.Rd
 14b8351e14e08f5201346a605f782a39 *man/SosDisc-class.Rd
@@ -53,9 +52,8 @@ b9f47629250c4669bcbf8b5fd8103d25 *man/SosDiscRobust-class.Rd
 b72a8db847d5f703538fb8b4b9a87a03 *man/SummarySosDisc-class.Rd
 654495edafb4ee4d37a54922ec16ccb8 *man/getWeight-methods.Rd
 8bb75008b132d7c0a80761c859fa884e *man/kibler.Rd
-736db59264020d28cb1870868cfa916b *man/rcpp_hello_world.Rd
-2affa9c01ae4c0bd967b90af6e891d45 *src/RcppExports.cpp
-0da63b615f705aa9dfa2e91b15a0ec3a *src/rcpp_hello_world.cpp
+ccf54ea61e4568f8127645a4c5d06194 *src/RcppExports.cpp
+882023388a02d9553a3ffee579587d45 *src/rcpp_hello_world.cpp
 1f6157c91f7937a35504083ef8982abf *tests/toutlier.R
 4453f79784bd351398aa65a86798e62d *tests/toutlier.Rout.save
 6811851102961872647dd27f634c8afc *tests/tsimca.R

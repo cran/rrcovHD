@@ -38,10 +38,9 @@ Class \code{"\linkS4class{Pca}"}, by class "PcaGrid", distance 3.
 	 }
 }
 \references{
-    Todorov V & Filzmoser P (2009),
-    An Object Oriented Framework for Robust Multivariate Analysis.
-    \emph{Journal of Statistical Software}, \bold{32}(3), 1--47,
-    URL \url{https://www.jstatsoft.org/v32/i03/}.
+    Todorov V & Filzmoser P (2009), An Object Oriented Framework for Robust Multivariate Analysis. 
+    \emph{Journal of Statistical Software}, \bold{32}(3), 1--47.
+    \doi{10.18637/jss.v032.i03}.
 
     C. Croux, P. Filzmoser, H. Fritz (2013).
     Robust Sparse Principal Component Analysis,

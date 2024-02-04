@@ -2,8 +2,6 @@ useDynLib(rrcovHD, .registration=TRUE)
 importFrom("Rcpp", sourceCpp)
 importFrom(Rcpp, evalCpp)
 
-export("rcpp_hello_world")
-
 # Export all names
 # exportPattern(".")
 # exportPattern("^[[:alpha:]]+")

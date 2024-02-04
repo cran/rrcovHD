@@ -1,3 +1,13 @@
+2024-02-04  Valentin Todorov  <valentin.todorov@chello.at>
+    *
+    * DESCRIPTION (Version): 0.3-0
+    *
+    * Replace \url{} by \doi{} for JSS - see the mail of Achim Zeileis from 6.10.2021
+    * License: GPL (>=3)
+    * Data set Cars moved to rrcov
+    * man/rcpp_hello_world.Rd removed, see mail from Kurt Hornik from 18.08.2023
+    *
+    
 2021-04-21  Valentin Todorov  <valentin.todorov@chello.at>
     *
     * DESCRIPTION (Version): 0.2-7
