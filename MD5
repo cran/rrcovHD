@@ -1,5 +1,5 @@
-a99bd1843e7dc3711e8d79c515df481f *ChangeLog
-9b35a92a469595579998187a4f3ffbd3 *DESCRIPTION
+af31375bc19869e263d5c3196c87164e *ChangeLog
+82de423b582587ddec695c60db1eb65f *DESCRIPTION
 d8a16578ed5ccbca7d7a60416132b6ce *NAMESPACE
 efad732ecf91a9afa4400a0f8ed6370a *R/AllClasses.R
 fa3488e849eaf56a18e2cce603d41d39 *R/AllGenerics.R
@@ -11,13 +11,13 @@ cb3a9c341325bea36401672488a4945a *R/OutlierPCDist.R
 e582acd3aae7c65f696f0ad6e9428903 *R/OutlierSign1.R
 c5ccce9f69888b5156b4afee10648a07 *R/RSimca.R
 92c3c4187f56064d4d2705e89bc83ce0 *R/RcppExports.R
-ffae5d4944f1ed4132b87da9ad62fec0 *R/SPcaGrid.R
+7bed6a302c336b848c45e342fe186a11 *R/SPcaGrid.R
 6c6733442e5d22b8860bd794ac472825 *R/Simca.R
 fabf215b0ac9035e4a834f1ec7531a6d *R/SosDisc-utils.R
 7a2dacfa79cc8cea85db56b4b7f26c99 *R/SosDiscRobust.R
 5752f99eceda48e21d5743fe05c7c9b6 *R/zzz.R
-d05b9d1b2e12be32999b488a627f9dcb *README.md
-181b5ac5a69bd3e3e542680739e88fd5 *build/partial.rdb
+e2f777fd7234ca277d53be63cf652295 *README.md
+cb3b20077bebc5da31fc1b46c657c0ff *build/partial.rdb
 147e0a31d59f34c794654ff8fe277dbd *data/kibler.rda
 8539fc2a06fc02206085015e19337433 *inst/ex/outlier.R
 16f2695c73fa8c58546b3e9232143337 *inst/ex/simca-colon.R
@@ -28,9 +28,9 @@ ef95493bd3bc1612bfb5ec5c1e12ab08 *inst/ex/simca-plots.R
 af343c8889e7d66859df7f2fc7b3d719 *man/CSimca.Rd
 371f4b4acfabc30a923edbd5b4bd998c *man/Outlier-class.Rd
 5f310fe1e15b2a5abb2ec59fa37de575 *man/OutlierMahdist-class.Rd
-5aec8b1d7301934fd3fc948c7312e07f *man/OutlierMahdist.Rd
+f3aa6c464eb39febcb30c9fa5ec7de77 *man/OutlierMahdist.Rd
 e75b37c246eb0ef3bf4b66cf86bc9bb3 *man/OutlierPCDist-class.Rd
-c46281a5681450b7c69526b30bf6eb3d *man/OutlierPCDist.Rd
+debc7ead63a68d70a700b075597f75f0 *man/OutlierPCDist.Rd
 5b172da22b67696cf2d4f162eee307ea *man/OutlierPCOut-class.Rd
 b41284faaef4e7627f375ba7de594f5a *man/OutlierPCOut.Rd
 1d84d0488d7015544443f4daca08ffe0 *man/OutlierSign1-class.Rd
@@ -41,7 +41,7 @@ a6589a5a147fdd0a4e4659bb16012ed7 *man/PredictSimca-class.Rd
 9b8bbf1f8715c91c8458892f95060369 *man/PredictSosDisc-class.Rd
 fdaf4091f60b346802ca3e6a50d549f8 *man/RSimca-class.Rd
 bc0f956e0ca67501b3b307f64ff269e1 *man/RSimca.Rd
-0f78877f61580189f9713c07e9a38fec *man/SPcaGrid-class.Rd
+3dd053a06f34f87d423c4d22578a836c *man/SPcaGrid-class.Rd
 b2a91ad5e9fde068a751e182d26d81c3 *man/SPcaGrid.Rd
 84bdad46fda95cad7375c7768658b6b6 *man/Simca-class.Rd
 14b8351e14e08f5201346a605f782a39 *man/SosDisc-class.Rd
